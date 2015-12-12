@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<script src="./lib/jquery.js"></script>
+	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js" data-build-remove="false"></script>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+
+	<script src="./js/gallery.js"></script>
+	<script src="./js/camera.js"></script>
+	<script src="./js/main.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+
+<body>
+    <div data-role="page" id="camera-page">
+        <div data-role="header" data-position="fixed">
+            <h1>Camera Example</h1>
+        </div>
+        <div data-role="content">
+	  		<div id="camera-screen">
+	  		</div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="button" id="capture-bnt"> Take Picture </div>
+            <a href="#gallery-page" id="preview">Gallery</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="gallery-page">
+        <div data-role="header" data-position="fixed">
+        	<h1>Gallery</h1>
+        </div>
+        <div data-role="content">
+        	<img id="image"></img>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="button" id="pre-bnt"> Previous </div>
+            <div data-role="button" id="next-bnt"> Next </div>
+        </div>
+    </div>
+</body>
+</html>
